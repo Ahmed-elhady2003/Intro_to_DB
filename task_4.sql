@@ -5,3 +5,4 @@ FROM
 WHERE 
     TABLE_SCHEMA = DATABASE() -- Use the current database passed as an argument
     AND TABLE_NAME = 'Books';
+    COLUMN_TYPE", "TABLE_SCHEMA = 'alx_book_store'
