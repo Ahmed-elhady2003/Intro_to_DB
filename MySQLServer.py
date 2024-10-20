@@ -1,6 +1,6 @@
 import mysql.connector
 from mysql.connector import errorcode
-
+CREATE DATABASE IF NOT EXISTS alx_book_store
 def create_database():
     try:
         # Connect to MySQL server (without specifying a database yet)
@@ -42,5 +42,5 @@ def create_database():
             connection.close()
             print("MySQL connection closed.")
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     create_database()
